@@ -31,8 +31,31 @@ let myObj= {
 
 //Functions//
 
-function() {
+let myFunction= function() {
 
 }
 
 // JavaScript is dynamically typed because it checks the type during the runtime.
+
+
+
+///*************Stack And Heap Memory in Js***************/
+//Stack Memory is used in all primitive data types//
+//Heap Memory is used in all Non-Primitive Data Types//
+
+let myName="Alfiya Heba"
+let anotherName=myName
+ anotherName="Heba Alfiya"
+console.log(anotherName);
+
+
+let userOne={
+    name:"Alfiya Heba",
+    email:"alfiya@gmail.com"
+}
+let userTwo=userOne
+
+userTwo.email="alfiyaheba@google.com"
+console.log(userOne.email)
+console.log(userTwo.email);
+
