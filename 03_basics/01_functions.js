@@ -49,3 +49,26 @@ function calculateCartPrice(val1,val2,...num1){
     return num1
 }
 //console.log(calculateCartPrice(500,400,300,200,100));//300,200,100
+
+// 
+
+const user={
+    username:"Alfiya",
+    price:12
+}
+function handleobject(myobject){
+    //console.log(`User name is ${myobject.username} and price is ${myobject.price}`);
+}
+handleobject({
+    username:"Alf",
+    price:2000
+})
+
+//handling arrays in functions//
+const newArray=[1,2,3,4]
+
+function returnValue(getValue){
+    return getValue[1]
+}
+//console.log(returnValue(newArray));
+console.log(returnValue([1,3,5,7]));
