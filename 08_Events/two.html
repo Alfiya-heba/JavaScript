@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Alfiya Heba</h1>
+    <button id="stop">Stop</button>
+    
+</body>
+<script>
+    const sayAlfiya=function(){
+        console.log("Alfiya Heba");
+    }
+
+    const changeText=function(){
+       document.querySelector('h1').innerHTML="Zahara Fathima"
+    }
+    //setTimeout(sayAlfiya,2000)
+    const chnageMe=setTimeout(changeText,5000)
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearTimeout(chnageMe)
+        console.log("Stopped");
+        
+    })
+</script>
+</html>
